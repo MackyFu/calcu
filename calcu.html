@@ -1,3 +1,19 @@
+<script>
+function suma(){
+        const input1 = document.getElementById("first")
+    const valor1 = parseInt (input1.value)
+
+    const input2 = document.getElementById("second")
+    const valor2 = parseInt (input2.value)
+
+    const result = document.getElementById("result")
+    result.innerText = valor1 + valor2
+}
+
+</script>
+
+
+
 <body>
     <p> 
         Ingrese el primer numero
@@ -9,8 +25,12 @@
     <input id="second">
     <br>
     <br>
-    <button>
+    <button onclick="suma()">
         Resultado
     </button>
+
+    <p id = "result">
+        0
+    </p>
 
 </body>
